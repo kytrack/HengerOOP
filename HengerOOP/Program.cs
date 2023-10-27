@@ -17,8 +17,6 @@ static void Lista(List<Henger> hengerek)
         Console.WriteLine(henger);
     }
 }
-static void Main(string[] args)
-{
     List<Henger> testek = new List<Henger>();
     testek.Add(new Henger(1, 4));
     testek.Add(new TomorHenger(0.5, 4, 2));
@@ -29,4 +27,4 @@ static void Main(string[] args)
     Console.WriteLine("Testek száma:" + testek.Count);
     Console.WriteLine("Létrehozott hengerek száma:" + Henger.SzuletesSzamlalo);
     Console.WriteLine($"Átlag térfogat: {AtlagTerfogat(testek):N2}");
-}
+
